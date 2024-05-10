@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"raindetection\startup_stm32f103x6.o"
+"raindetection\lcd_txt.o"
+"raindetection\main.o"
+"raindetection\stm32f1xx_it.o"
+"raindetection\stm32f1xx_hal_msp.o"
+"raindetection\stm32f1xx_hal_gpio_ex.o"
+"raindetection\stm32f1xx_hal_tim.o"
+"raindetection\stm32f1xx_hal_tim_ex.o"
+"raindetection\stm32f1xx_hal.o"
+"raindetection\stm32f1xx_hal_rcc.o"
+"raindetection\stm32f1xx_hal_rcc_ex.o"
+"raindetection\stm32f1xx_hal_gpio.o"
+"raindetection\stm32f1xx_hal_dma.o"
+"raindetection\stm32f1xx_hal_cortex.o"
+"raindetection\stm32f1xx_hal_pwr.o"
+"raindetection\stm32f1xx_hal_flash.o"
+"raindetection\stm32f1xx_hal_flash_ex.o"
+"raindetection\stm32f1xx_hal_exti.o"
+"raindetection\system_stm32f1xx.o"
+--strict --scatter "RainDetection\RainDetection.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RainDetection.map" -o RainDetection\RainDetection.axf
